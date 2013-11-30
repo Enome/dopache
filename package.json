@@ -1,0 +1,17 @@
+{
+  "name": "dopache",
+  "version": "0.0.0",
+  "description": "Link containers and their assigned ip + a port to hipache.",
+  "keywords": ["docker", "hipache"],
+  "main": "index.js",
+  "bin": {
+    "dopache": "executable.js"
+  },
+  "author": "Geert Pasteels <geert.pasteels@gmail.com",
+  "license": "MIT",
+  "dependencies": {
+    "redis": "~0.9.1",
+    "async": "~0.2.9",
+    "docker.io": "~0.7.1",
+  }
+}
