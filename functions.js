@@ -110,13 +110,13 @@ var functions = {
     async.each(Object.keys(state.urls), function (key, callback) {
 
       var current = state.urls[key];
+      current.hipache = {};
 
       if (!current.container.inspect.error) {
 
         var port = current.dopache.value.split(':').pop();
         var ip = current.container.inspect.result.NetworkSettings.IPAddress;
 
-        current.hipache = {};
 
         if (!ip || !port) {
           return callback(); 

@@ -1,4 +1,4 @@
-# Dopache
+# Docker + Hipache = Dopache
 
 Link containers and their assigned ip + a port to hipache.
 

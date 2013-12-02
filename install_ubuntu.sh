@@ -1,19 +1,15 @@
 # Colors
 default=$(tput sgr0)
 green=$(tput setaf 6)
-red=$(tput setaf 9)
 
 # Alerts
 confirm() {
   echo "${green}---> ${default}$1"
 }
 
-warning() {
-  echo "${red}---> ${default}$1"
-}
-
 # Install dopache
-npm install dopache -i
+sudo npm install dopache -g
+confirm 'Installed, dopache has.'
 
 # Install upstart script for dopache
 
@@ -25,6 +21,9 @@ respawn
 respawn limit 15 5
 
 script
-  sudo dopache.conf >> /var/log/dopache
-  end script
+  sudo dopache >> /var/log/dopache
+end script
 EFO
+
+sudo start dopache
+confirm 'Started, dopache upstart has.'

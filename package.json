@@ -12,6 +12,6 @@
   "dependencies": {
     "redis": "~0.9.1",
     "async": "~0.2.9",
-    "docker.io": "~0.7.1",
+    "docker.io": "~0.7.1"
   }
 }
