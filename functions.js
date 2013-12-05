@@ -122,7 +122,7 @@ var functions = {
           return callback(); 
         }
 
-        current.hipache.url = ip + ':' + port;
+        current.hipache.url = 'http://' + ip + ':' + port;
       
       }
 

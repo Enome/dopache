@@ -1,6 +1,6 @@
 {
   "name": "dopache",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Link containers and their assigned ip + a port to hipache.",
   "keywords": ["docker", "hipache"],
   "main": "index.js",

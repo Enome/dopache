@@ -1,2 +1,2 @@
 #!/usr/bin/node
-setInterval(require('./index'), 3500);
+setInterval(require('./index'), 1000);
